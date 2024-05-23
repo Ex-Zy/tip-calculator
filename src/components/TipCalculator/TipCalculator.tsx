@@ -1,6 +1,7 @@
 import './TipCalculator.scss'
 import React from 'react'
 import { useTipCalculator } from '../../hooks/useTipCalculator.ts'
+import { InputField } from '../InputField/InputField.tsx'
 
 interface Props {
   className: string
@@ -12,18 +13,14 @@ export const TipCalculator: React.FC<Props> = ({ className = '' }: Props) => {
   return (
     <form className={`tip-calculator ${className}`}>
       <div className="bill-section">
-        <label className="u-input">
-          <span className="u-input__label">bill</span>
-          <input
-            type="number"
-            name="bill"
-            min="0"
-            placeholder="Enter bill"
-            className="u-input__field"
-            value={paymentDetails.bill}
-            onChange={handleChange}
-          />
-        </label>
+        <InputField
+          label="Bill"
+          type="number"
+          name="bill"
+          value={paymentDetails.bill}
+          min={0}
+          onChange={handleChange}
+        />
         <fieldset>
           <legend>Select Tip %</legend>
           <label>
@@ -47,18 +44,14 @@ export const TipCalculator: React.FC<Props> = ({ className = '' }: Props) => {
             <input type="radio" name="tip" value="50" checked={paymentDetails.tip === 50} onChange={handleChange} />
           </label>
         </fieldset>
-        <label className="u-input">
-          <span className="u-input__label">Number of People</span>
-          <input
-            type="number"
-            placeholder="Enter bill"
-            className="u-input__field"
-            name="numberOfPeople"
-            min="0"
-            value={paymentDetails.numberOfPeople}
-            onChange={handleChange}
-          />
-        </label>
+        <InputField
+          label="Number of People"
+          type="number"
+          name="numberOfPeople"
+          value={paymentDetails.numberOfPeople}
+          min={0}
+          onChange={handleChange}
+        />
       </div>
       <div className="result-section">
         <div className="result">

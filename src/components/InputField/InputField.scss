@@ -1,0 +1,44 @@
+.input-field {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 16px;
+    color: #5e7a7d;
+  }
+
+  &__el {
+    margin: 6px 0 0;
+    border-radius: 5px;
+    width: 100%;
+    max-width: none;
+    height: 48px;
+    background: #f3f9fa;
+    border: 2px solid transparent;
+    padding-inline: 16px;
+    text-align: right;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    color: #00474b;
+
+    &[type='number'] {
+      -moz-appearance: textfield;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+
+    &:focus {
+      border-color: #26c2ae;
+      outline: none;
+    }
+  }
+}
