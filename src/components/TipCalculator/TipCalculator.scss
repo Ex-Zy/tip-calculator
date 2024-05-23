@@ -1,5 +1,7 @@
 .tip-calculator {
   width: 920px;
+  display: flex;
+  gap: 48px;
   min-height: 480px;
   box-shadow: 0 32px 43px 0 rgba(79, 166, 175, 0.2);
   background: #fff;
@@ -9,4 +11,12 @@
   &--margin {
     margin: 88px 0 0;
   }
+}
+
+.bill-section {
+  width: 50%;
+}
+
+.result-section {
+  width: 50%;
 }
