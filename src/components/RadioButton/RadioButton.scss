@@ -1,0 +1,29 @@
+.radio {
+  position: relative;
+  border-radius: 5px;
+  width: 120px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00474b;
+  cursor: pointer;
+  border: 2px solid transparent;
+
+  &--checked {
+    background: #26c2ae;
+    color: #00474b;
+  }
+
+  &__label {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__el {
+    display: none;
+  }
+}
