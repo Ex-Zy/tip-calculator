@@ -1,6 +1,7 @@
 .input-field {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   &__label {
     font-family: 'Space Mono', monospace;
@@ -10,6 +11,17 @@
     + .input-field__el {
       margin: 6px 0 0;
     }
+  }
+
+  &__error {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: right;
+    color: #e17457;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   &__el {

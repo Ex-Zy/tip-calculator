@@ -12,6 +12,7 @@ interface Props {
   errorText?: string
   min?: number
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+  onBlur?: () => void
 }
 
 export const InputField: React.FC<Props> = (props: Props) => {
@@ -26,6 +27,7 @@ export const InputField: React.FC<Props> = (props: Props) => {
         className={`input-field__el ${props.error ? 'input-field__el--error' : ''}`}
         value={props.value}
         onChange={props.onChange}
+        onBlur={props.onBlur}
         disabled={props.disabled}
       />
       {props.errorText && <span className="input-field__error">{props.errorText}</span>}
