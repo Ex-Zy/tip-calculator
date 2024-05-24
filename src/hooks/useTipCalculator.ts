@@ -14,7 +14,7 @@ export const useTipCalculator = () => {
   }
 
   const handleReset = () => {
-    handlePaymentChange({ tip: 5, bill: 0, numberOfPeople: 1 })
+    handlePaymentChange({ tip: 0, bill: 0, numberOfPeople: 0 })
   }
 
   return {

@@ -25,3 +25,27 @@ h6 {
   margin: 0;
   font-weight: 400;
 }
+
+.btn {
+  border-radius: 5px;
+  width: 100%;
+  max-width: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  background: #26c2ae;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #00474b;
+  transition: all 0.3s;
+  border: 0;
+  cursor: pointer;
+
+  &:hover {
+    background: #9fe8df;
+    color: #26c2ae;
+  }
+}

@@ -1,0 +1,44 @@
+.coast-details {
+  border-radius: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  background: #00474b;
+  padding: 40px;
+
+  &__btn {
+    margin-top: auto;
+  }
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 71px;
+
+  &__title {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  &__sub {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 13px;
+    color: #7f9d9f;
+  }
+
+  &__value {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -0.02em;
+    text-align: right;
+    color: #26c2ae;
+  }
+}
