@@ -16,8 +16,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://www.frontendmentor.io/solutions/)
-- Live Site URL: [Todo app](https://tip-calculator-pink-five.vercel.app/)
+- Solution URL: [GitHub](https://www.frontendmentor.io/solutions/react-tip-calculator-HAb0ldcRpR)
+- Live Site URL: [Tip calculator app](https://tip-calculator-pink-five.vercel.app/)
 
 ## Author
 
