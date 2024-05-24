@@ -59,4 +59,14 @@
       border-color: #e17457;
     }
   }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    margin-top: 12px;
+    color: #5e7a7d;
+    pointer-events: none;
+  }
 }

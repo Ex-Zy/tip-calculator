@@ -5,6 +5,7 @@ interface Props {
   type: 'text' | 'number'
   name: string
   value: string | number
+  icon?: React.ReactElement
   label?: string
   placeholder?: string
   disabled?: boolean
@@ -30,6 +31,7 @@ export const InputField: React.FC<Props> = (props: Props) => {
         onBlur={props.onBlur}
         disabled={props.disabled}
       />
+      {props.icon && <span className="input-field__icon">{props.icon}</span>}
       {props.errorText && <span className="input-field__error">{props.errorText}</span>}
     </label>
   )

@@ -4,6 +4,8 @@ import { RadioGroup } from '../RadioGroup/RadioGroup.tsx'
 import React from 'react'
 import { PaymentDetails as IPaymentDetails } from '../../types'
 import { useValidate } from '../../hooks/useValidate.ts'
+import { IconPerson } from '../IconPerson.tsx'
+import { IconDollar } from '../IconDollar.tsx'
 
 interface Props {
   details: IPaymentDetails
@@ -21,6 +23,7 @@ export const PaymentDetails: React.FC<Props> = ({ details, handleChange }: Props
         label="Bill"
         type="number"
         name="bill"
+        icon={<IconDollar />}
         value={details.bill}
         min={0}
         error={!!errors.bill}
@@ -35,6 +38,7 @@ export const PaymentDetails: React.FC<Props> = ({ details, handleChange }: Props
         label="Number of People"
         type="number"
         name="numberOfPeople"
+        icon={<IconPerson />}
         value={details.numberOfPeople}
         min={0}
         error={!!errors.numberOfPeople}
