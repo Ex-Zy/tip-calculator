@@ -15,6 +15,12 @@ export const useCalculate = (initialPayments: PaymentDetails) => {
     const tipPerPerson = roundToTwoDecimal(totalTip / numberOfPeople)
     const totalPerPerson = roundToTwoDecimal((bill + totalTip) / numberOfPeople)
 
+    // prevent incorrect calculations
+    if (numberOfPeople === 0) {
+      setCoastDetails({ tipAmount: 0, total: 0 })
+      return
+    }
+
     setCoastDetails({
       tipAmount: isNaN(tipPerPerson) ? 0 : tipPerPerson,
       total: isNaN(totalPerPerson) ? 0 : totalPerPerson,
