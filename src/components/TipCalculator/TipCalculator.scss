@@ -1,5 +1,5 @@
 .tip-calculator {
-  width: 920px;
+  max-width: 920px;
   display: flex;
   gap: 48px;
   min-height: 480px;
@@ -7,6 +7,13 @@
   background: #fff;
   border-radius: 25px;
   padding: 48px;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px;
+    max-width: 375px;
+  }
 
   &--margin {
     margin: 88px 0 0;

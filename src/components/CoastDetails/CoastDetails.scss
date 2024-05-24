@@ -1,6 +1,6 @@
 .coast-details {
   border-radius: 15px;
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -8,8 +8,16 @@
   background: #00474b;
   padding: 40px;
 
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+
   &__btn {
     margin-top: auto;
+
+    @media screen and (max-width: 900px) {
+      margin-top: 32px;
+    }
   }
 }
 
@@ -40,5 +48,9 @@
     letter-spacing: -0.02em;
     text-align: right;
     color: #26c2ae;
+
+    @media screen and (max-width: 900px) {
+      font-size: 32px;
+    }
   }
 }

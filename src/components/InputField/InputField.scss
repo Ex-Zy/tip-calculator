@@ -50,9 +50,13 @@
       -webkit-appearance: none;
     }
 
-    &:focus {
+    &:focus(:not(.input-field__el--error)) {
       border-color: #26c2ae;
       outline: none;
+    }
+
+    &--error {
+      border-color: #e17457;
     }
   }
 }
